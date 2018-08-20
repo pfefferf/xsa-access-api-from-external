@@ -1,0 +1,14 @@
+{
+	"welcomeFile": "index.html",
+	"authenticationMethod": "route",
+	"routes": [{
+		"source": "/api(.*)",
+		"destination": "api_js-backend",
+		"authenticationType": "xsuaa",
+		"csrfProtection": true,
+		"scope": {
+			"GET": "$XSAPPNAME.Display",
+			"default": "$XSAPPNAME.Display"
+		}
+	}]
+}

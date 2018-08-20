@@ -1,0 +1,12 @@
+{
+  "xsappname": "external-api-access",
+  "scopes": [{
+    "name": "$XSAPPNAME.Display",
+    "description": "display"
+  }],
+  "role-templates": [{
+    "name": "Viewer",
+    "description": "Read Access",
+    "scope-references": ["$XSAPPNAME.Display"]
+  }]
+}
