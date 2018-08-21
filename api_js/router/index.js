@@ -3,5 +3,5 @@
 "use strict";
 
 module.exports = (app, server) => {
-	app.use("/testEndpoint", require("./routes/testEndpoint")());
+	app.use("/api/testEndpoint", require("./routes/testEndpoint")());
 };
